@@ -26,3 +26,10 @@ function e3()
     let parcela = n1+n1*(((n2**2)/100)*n3);
     document.getElementById("mensagem").innerHTML = " o valor da parcela é :  "+parcela ;
 }
+function e4()
+{
+    let altura = document.getElementById("altura").value;
+    let base = document.getElementById("base").value;
+    let area = base*altura/2;
+    ducument.getElementById("mensagem").innerHTML="a area do tringulo é: "+area;
+}
