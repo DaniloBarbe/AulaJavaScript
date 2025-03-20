@@ -31,5 +31,12 @@ function e4()
     let altura = document.getElementById("altura").value;
     let base = document.getElementById("base").value;
     let area = base*altura/2;
-    ducument.getElementById("mensagem").innerHTML="a area do tringulo é: "+area;
+    document.getElementById("mensagem").innerHTML="a area do tringulo é: "+area;
+}
+function e5()
+{
+    let lado = document.getElementById("lado").value;
+   
+    let area = lado*lado;
+    document.getElementById("mensagem").innerHTML="a area do quadrado é: "+area;
 }
