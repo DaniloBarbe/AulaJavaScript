@@ -40,3 +40,14 @@ function e5()
     let area = lado*lado;
     document.getElementById("mensagem").innerHTML="a area do quadrado é: "+area;
 }
+function e6()
+{
+let qdt = document.getElementById("qdt").value;
+let preco = document.getElementById("preco").value;
+let valor = qdt*preco;
+let desconto = valor*0.1;
+let total= valor-desconto;
+document.getElementById("mensagem").innnerHTML="o preco total é: "+valor;
+document.getElementById("mensagem").innnerHTML="<br> o desconto é: "+desconto;
+document.getElementById("mensagem").innnerHTML="<br> o preço final é: "+total;
+}    
