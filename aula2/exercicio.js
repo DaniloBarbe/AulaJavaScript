@@ -81,3 +81,116 @@ function e10()
     let media = n2*n1*30;
     document.getElementById("mensagem").innerHTML="o salario é: "+media;
 }
+function e11()
+{
+    let n1 = Number(document.getElementById("n1").value);
+    let n2 = Number(document.getElementById("n2").value);
+    if (n1==n2){
+        document.getElementById("mensagem").innerHTML="os numeros sao iguais";
+    }else{
+        document.getElementById("mensagem").innerHTML="os numeros sao diferentes";
+    }
+}
+function e12()
+{
+    let n1 = Number(document.getElementById("n1").value);
+    let n2 = Number(document.getElementById("n2").value);
+    let n3 = Number(document.getElementById("n3").value);
+    if (n1+n2>n3){
+        document.getElementById("mensagem").innerHTML="o terceiro numero é menor que a soma dos primeiro ";
+    }else{
+        document.getElementById("mensagem").innerHTML="o terceiro é maior que a soma dos primeiros";
+    }
+}
+function e13()
+{
+    let n1 = Number(document.getElementById("n1").value);
+
+    if (n1<=500){
+        document.getElementById("mensagem").innerHTML="voce tem direito ao aumento de salario ";
+    }else{
+        document.getElementById("mensagem").innerHTML="voce nao tem direito ao aumento de salario";
+    }
+}
+function e14()
+{
+    let n1 = Number(document.getElementById("n1").value);
+
+    if (n1<=500){
+        let salario = n1*1.3
+        document.getElementById("mensagem").innerHTML="seu salario foi reajustado para: R$"+salario;
+    }else{
+        document.getElementById("mensagem").innerHTML="voce nao tem direito ao aumento de salario";
+    }
+}
+function e15()
+{
+    let cod = Number(document.getElementById("cod").value);
+    let qdt = Number(document.getElementById("qdt").value);
+    if (cod==5){
+        let total = qdt*500.00
+        document.getElementById("mensagem").innerHTML="tenis nike R$500,00";
+        document.getElementById("mensagem").innerHTML="o preco total foi R$"+total;
+    }
+    else if (cod==10)
+    {
+        let total = qdt*300.00
+        document.getElementById("mensagem").innerHTML="tenis nike R$300,00";
+        document.getElementById("mensagem").innerHTML="o preco total foi R$"+total;   
+    }
+    else
+    {
+        document.getElementById("mensagem").innerHTML="codigo invelido";   
+    }
+}
+function e16()
+{
+    let cod = Number(document.getElementById("cod").value);
+    let qdt = Number(document.getElementById("qdt").value);
+    let preco = Number(document.getElementById("preco").value);
+
+    let subtotal=qdt*preco;
+    if (cod==1){
+        document.getElementById("mensagem1").innerHTML="quantidade: "+qdt;   
+        document.getElementById("mensagem2").innerHTML="preco do produto: R$"+preco;  
+        document.getElementById("mensagem3").innerHTML="subtotal: R$"+subtotal;  
+        document.getElementById("mensagem4").innerHTML="o frete custa R$10,00";  
+        document.getElementById("mensagem5").innerHTML="total a pagar: R$"+(subtotal+10);  
+    }
+    else if (cod==2)
+    {
+        document.getElementById("mensagem1").innerHTML="quantidade: "+qdt;   
+        document.getElementById("mensagem2").innerHTML="preco do produto: R$"+preco;  
+        document.getElementById("mensagem3").innerHTML="subtotal: R$"+subtotal;  
+        document.getElementById("mensagem4").innerHTML="o frete custa R$50,00";  
+        document.getElementById("mensagem5").innerHTML="total a pagar: R$"+(subtotal+50);  
+    }
+    else if(cod==3 || cod==5)
+    {
+        document.getElementById("mensagem1").innerHTML="quantidade: "+qdt;   
+        document.getElementById("mensagem2").innerHTML="preco do produto: R$"+preco;  
+        document.getElementById("mensagem3").innerHTML="subtotal: R$"+subtotal;  
+        document.getElementById("mensagem4").innerHTML="o frete custa R$30,00";  
+        document.getElementById("mensagem5").innerHTML="total a pagar: R$"+(subtotal+30);  
+    }
+    else if(cod>6 && cod<9)
+    {
+        document.getElementById("mensagem1").innerHTML="quantidade: "+qdt;   
+        document.getElementById("mensagem2").innerHTML="preco do produto: R$"+preco;  
+        document.getElementById("mensagem3").innerHTML="subtotal: R$"+subtotal;  
+        document.getElementById("mensagem4").innerHTML="o frete custa R$40,00";  
+        document.getElementById("mensagem5").innerHTML="total a pagar: R$"+(subtotal+40);  
+    }
+    else if((cod>10 && cod<15)||(cod>25 && cod<30))
+    {
+        document.getElementById("mensagem1").innerHTML="quantidade: "+qdt;   
+        document.getElementById("mensagem2").innerHTML="preco do produto: R$"+preco;  
+        document.getElementById("mensagem3").innerHTML="subtotal: R$"+subtotal;  
+        document.getElementById("mensagem4").innerHTML="o frete custa R$85,00";  
+        document.getElementById("mensagem5").innerHTML="total a pagar: R$"+(subtotal+85);  
+    }
+    else
+    {
+        document.getElementById("mensagem1").innerHTML="codigo invelido";   
+    }
+}
